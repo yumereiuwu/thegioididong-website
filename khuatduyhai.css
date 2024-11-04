@@ -1,0 +1,136 @@
+.khuatduyhai {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.khuatduyhai .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    
+}
+
+/* Full-width scrolling images */
+.khuatduyhai .full-width-images {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.khuatduyhai .full-width-images img {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.khuatduyhai .full-width-images::-webkit-scrollbar {
+    display: none;
+}
+
+.khuatduyhai .offer-section h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.khuatduyhai .offers {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.khuatduyhai .offer-item {
+    flex: 1;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.khuatduyhai .offer-item:last-child {
+    margin-right: 0;
+}
+
+.khuatduyhai .offer-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.khuatduyhai .news {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.khuatduyhai .news h3 {
+    margin-bottom: 10px;
+}
+
+/* News tabs */
+.khuatduyhai .news-tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.khuatduyhai .news-tabs span {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.khuatduyhai .news-tabs .active-tab {
+    background-color: #007bff;
+    color: white;
+}
+
+.khuatduyhai .news-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.khuatduyhai .news-item div {
+    width: 23%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.khuatduyhai .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .offers {
+        flex-wrap: wrap;
+    }
+
+    .offer-item, .news-item div {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-item, .news-item div {
+        width: 100%;
+    }
+}
+ .khuatduyhai{ transform: translateY(730px);}

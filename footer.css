@@ -1,0 +1,152 @@
+.footer-container {
+  display: flex; /* Sử dụng flexbox để bố trí */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các phần */
+  background-color: white; /* Màu nền cho footer */
+  padding: 20px; /* Khoảng cách xung quanh footer */
+}
+
+.about-company, .other-info {
+  padding: 15px; /* Khoảng cách xung quanh các phần */
+}
+
+.footer-container a {
+  color: #007bff; /* Màu xanh cho các liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.footer-bottom {
+  background-color: #f1f1f1; /* Nền màu xám nhạt để phân biệt */
+  color: #666; /* Màu chữ xám đậm */
+  text-align: left; /* Căn lề trái */
+  font-size: 15px; /* Kích thước chữ */
+  margin-top: 10px; /* Khoảng cách giữa nội dung và footer-bottom */
+  padding: 15px 0;
+}
+
+.footer-bottom a {
+  color: #007bff; /* Màu xanh cho các liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.other-info1 .website-logos {
+  margin-top: 10px; /* Khoảng cách giữa tiêu đề và các logo */
+}
+.other-info1 .row1, .other-info1 .row2 {
+  display: flex; /* Sử dụng flexbox để bố trí */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các logo */
+  margin-bottom: 10px; /* Khoảng cách giữa các hàng logo */
+}
+
+.other-info1 .row1 a, .other-info1 .row2 a {
+  flex: 1; /* Chia đều không gian cho các logo */
+  text-align: left; /* Căn lề trái các logo */
+  margin: 0 5px; /* Khoảng cách xung quanh các logo */
+}
+
+.other-info1 .website-logos img {
+  max-width: 100%; /* Đảm bảo ảnh hiển thị đúng kích thước */
+  height: auto; /* Giữ tỉ lệ khung hình */
+}
+
+.social-links {
+  display: flex; /* Sử dụng flexbox để căn ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding-top: 15px;
+}
+
+.social-item {
+  display: flex; /* Sử dụng flexbox để căn chỉnh ảnh và chữ */
+  flex-direction: column; /* Đặt ảnh trên chữ */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  margin: 0 10px; /* Khoảng cách giữa các phần tử */
+  color: #1E90FF; /* Màu xanh cho chữ */
+}
+
+.social-item img {
+  width: 50px; /* Kích thước ảnh */
+  height: auto; /* Giữ tỉ lệ khung hình */
+}
+
+.certificates {
+  display: flex;
+  text-align: center;
+  padding: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.certificates img {
+  margin-right: 10px;
+}
+
+.row1 img, .row2 img, .certificates img, .social-links img {
+  height: 30px; /* Chiều cao cho tất cả ảnh trong row1, row2 và certificates */
+}
+
+.other-info a {
+  color: black; /* Màu đen cho liên kết trong other-info */
+}
+
+.footer1 {
+  transform: translateY(700px); /* Dịch chuyển footer xuống 700px */
+}
+
+.other-info a {
+  color: black; /* Màu chữ đen */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.other-info a:hover {
+  color: #007bff; /* Thay đổi màu chữ khi hover nếu cần */
+  text-decoration: none; /* Không có gạch chân khi hover */
+}
+
+.other-info .cachdong {
+  margin-top: 12px;
+}
+
+.about-company .cachdong1 {
+  margin-top: 12px;
+}
+
+.cachdong .material-symbols-outlined {
+  font-size: 1em; /* Điều chỉnh kích thước biểu tượng */
+}
+
+.cachdong {
+  display: flex; /* Sử dụng flexbox để sắp xếp các phần tử trong dòng */
+  align-items: center; /* Căn giữa theo chiều dọc cho các phần tử con */
+  gap: 5px; /* Khoảng cách 5px giữa các phần tử con */
+}
+
+/* Phần chứa dropdown */
+.dropdown-container {
+  position: relative; /* Đặt vị trí tương đối để dễ dàng quản lý vị trí của menu con */
+}
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+  display: none; /* Ẩn menu con dropdown mặc định */
+  background-color: #fff; /* Màu nền trắng cho menu con */
+  padding: 10px; /* Khoảng cách 10px xung quanh menu con */
+  list-style: none; /* Loại bỏ dấu chấm ở trước các mục của danh sách */
+  width: 100%; /* Chiếm toàn bộ chiều ngang của phần chứa */
+  margin-top: 10px; /* Khoảng cách 10px phía trên để tách khỏi phần chứa */
+}
+
+/* Hiển thị dropdown khi hover */
+.dropdown-container:hover .dropdown-menu {
+  display: block; /* Hiển thị menu con khi hover vào vùng chứa */
+}
+
+.dropdown-menu li {
+  padding: 8px ; /* Khoảng cách 8px trên và dưới cho các mục trong menu */
+}
+
+.dropdown-menu li a {
+  color: #333; /* Màu chữ xám đậm cho các liên kết trong menu */
+  text-decoration: none; /* Bỏ gạch chân của các liên kết */
+  font-size: 14px; /* Kích thước chữ cho các liên kết */
+}
+
+.dropdown-menu li a:hover {
+  color: #007bff; /* Đổi màu thành xanh khi hover vào các liên kết trong menu */
+}

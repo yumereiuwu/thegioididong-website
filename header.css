@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container chính */
+.header {
+    background-color: #FFD700; /* Màu nền vàng */
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Cố định vị trí */
+    top: 0; /* Đặt ở phía trên cùng */
+    left: 0; /* Đặt ở phía bên trái */
+    right: 0; /* Đặt ở phía bên phải */
+    z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 280px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000; /* Màu chữ đen */
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+/* Phần tài khoản và giỏ hàng */
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+.header-icons1{
+    padding: 10px 15px;
+    padding-left: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+a{text-decoration: none;}
+
+.header-icons div {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-icons i {
+    margin-right: 5px;
+}
+
+.header-icons span {
+    font-size: 16px;
+    color: #000;
+}
+
+.location {
+   background-color: rgba(196, 173, 43, 0.6);
+   padding: 10px 20px; /* Padding bên trong */
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   min-width: 400px; /* Hoặc width: 200px; để tăng chiều rộng */
+   justify-content: flex-start; /* Căn trái nội dung */
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.header-icons .header-icons1:hover {
+  background-color: rgba(177, 169, 123, 0.6);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFD700; 
+    height: 60px;
+    position: fixed; /* Cố định vị trí */
+    top: 60px; /* Đặt dưới header */
+    left: 0;
+    right: 0; 
+    z-index: 999; /* Đảm bảo nằm trên các phần tử khác */
+}
+
+.navbar ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+    height: 100%; 
+}
+
+.navbar li {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20px 20px 0 0 ;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    padding: 0 15px;
+}
+
+.navbar a i {
+    margin-right: 8px; 
+}
+
+.navbar li:hover {
+    background-color: rgba(114, 94, 94, 0.5);
+}
+.phukien{
+    width: 600px;
+}
+.phukien a{text-decoration: none;
+  width: 20%;
+  float: left;}
+.phukien1{
+    padding: 2px;
+    margin: 1px;
+    border-radius: 8px; 
+    text-align: center;
+  
+}
+.phukien1:hover{
+    background-color: rgba(94, 84, 84, 0.2);
+}
+.phukien{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 60px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    
+}
+.navbar li:hover .phukien {
+display: block; /* Hiện dropdown khi hover vào li */}
